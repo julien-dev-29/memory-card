@@ -1,0 +1,7 @@
+.scoreboard {
+  text-align: right;
+}
+
+.scoreboard p:nth-child(1) {
+  font-size: 2rem;
+}

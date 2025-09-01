@@ -1,0 +1,71 @@
+:root {
+  /* ==== Couleur principale - Portal Green ==== */
+  --primary-base: rgb(0, 255, 157); /* vert portail */
+  --primary-shade-1: rgb(0, 200, 120);
+  --primary-shade-2: rgb(0, 150, 90);
+  --primary-tint-1: rgb(80, 255, 180);
+  --primary-tint-2: rgb(150, 255, 210);
+
+  /* ==== Couleur secondaire - Sky Blue ==== */
+  --secondary-base: rgb(0, 204, 255); /* bleu ciel */
+  --secondary-shade-1: rgb(0, 160, 200);
+  --secondary-shade-2: rgb(0, 120, 150);
+  --secondary-tint-1: rgb(80, 225, 255);
+  --secondary-tint-2: rgb(170, 240, 255);
+
+  /* ==== Accent - Citron Lime ==== */
+  --accent-base: rgb(255, 255, 102); /* jaune/vert */
+  --accent-shade-1: rgb(210, 210, 80);
+  --accent-shade-2: rgb(160, 160, 60);
+  --accent-tint-1: rgb(255, 255, 150);
+  --accent-tint-2: rgb(255, 255, 200);
+
+  /* ==== Extra - Cosmic Purple ==== */
+  --cosmic-base: rgb(163, 73, 164);
+  --cosmic-shade-1: rgb(120, 50, 120);
+  --cosmic-tint-1: rgb(200, 150, 210);
+
+  /* ==== Backgrounds ==== */
+  --bg-dark: rgb(10, 10, 10); /* espace */
+  --bg-light: rgb(245, 245, 245);
+
+  /* ==== Text ==== */
+  --text-light: rgb(255, 255, 255);
+  --text-dark: rgb(20, 20, 20);
+}
+
+@font-face {
+  font-family: "R&M Solid";
+  src: url("./get_schwifty.ttf");
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "R&M Solid", sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  margin: 0 4px;
+  border-radius: 3px;
+  border: none;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  background-color: var(--cosmic-base);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--cosmic-shade-1);
+}
+
+.btn-primary:active {
+  background-color: var(--cosmic-base);
+}

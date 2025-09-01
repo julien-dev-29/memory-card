@@ -1,0 +1,19 @@
+.game h1:hover {
+  cursor: pointer;
+}
+
+.game h1 {
+  color: var(--accent-base);
+}
+
+.game {
+  padding: 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url(/fond.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-base);
+}
+

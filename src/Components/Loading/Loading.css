@@ -1,0 +1,17 @@
+.loading {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  background-color: var(--cosmic-base);
+  animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

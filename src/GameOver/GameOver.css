@@ -1,0 +1,50 @@
+.game-hover {
+  position: relative;
+  padding: 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url(/fond.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--primary-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-hover h1 {
+  font-size: 4rem;
+}
+
+.game-hover p {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+
+.game-hover button {
+  margin-top: 8px;
+}
+
+.game-hover img {
+  transform-origin: center;
+  height: 250px;
+  position: absolute;
+  animation: move-rick-jump 5s alternate-reverse infinite ease-out;
+  right: 500px;
+}
+
+@keyframes move-rick-jump {
+  from {
+    transform: rotate(0) translate(-250px, 250px);
+  }
+
+  50% {
+    transform: rotate(50deg) translateX(250px);
+  }
+
+  to {
+    transform: rotate(360deg) translate(0, 0);
+  }
+}

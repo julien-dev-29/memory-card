@@ -1,0 +1,73 @@
+.home {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 24px;
+  background-image: url(/fond.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: padding-box;
+  color: var(--accent-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 span:nth-child(1) {
+  color: var(--cosmic-base);
+}
+
+.home h1 span {
+  color: var(--primary-base);
+}
+
+.home h1 {
+  font-size: 4rem;
+  margin: 0;
+  animation: opak 2s;
+}
+
+.home p {
+  font-size: 2rem;
+}
+
+.home #rick {
+  position: absolute;
+  left: 150px;
+  animation: move-rick 600ms;
+}
+
+.home #morty {
+  position: absolute;
+  right: 150px;
+  animation: move-morty  600ms;
+}
+
+@keyframes move-rick {
+  from {
+    transform: translate(-450px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes move-morty {
+  from {
+    transform: translate(450px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes opak {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
