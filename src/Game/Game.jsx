@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Scoreboard } from "../ScoreBoard/Scoreboard";
-import { Board } from "../board/Board";
+import { Board } from "../Board/Board";
 import "./Game.css";
 
 const Game = ({
