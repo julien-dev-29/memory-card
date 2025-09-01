@@ -1,4 +1,4 @@
-import "./ScoreBoard.css";
+import "./Scoreboard.css";
 
 const Scoreboard = ({ bestScore, currentScore }) => {
   return (
